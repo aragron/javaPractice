@@ -249,6 +249,7 @@ public class SingleLinkedList<T> {
                     pSlow = pSlow.next;
                     pFast = pFast.next;
                 }
+                //打印环的入口节点数据
                 System.out.println(pSlow.getData());
                 return true;
             }
@@ -273,12 +274,4 @@ public class SingleLinkedList<T> {
         this.getTail().next = sl.head;
         this.size += sl.getSize();
     }
-
-//    public boolean Splice(SingleLinkedList<Node<T>> s){
-//        if (this.hasLoop() || s.hasLoop()){
-//            return false;
-//        }
-//
-//        return true;
-//    }
 }
