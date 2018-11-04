@@ -269,9 +269,24 @@ public class SingleLinkedList<T> {
         }
         return p;
     }
+
     public void splice(SingleLinkedList<T> sl){
         //sl.head = this.getTail().next;
         this.getTail().next = sl.head;
         this.size += sl.getSize();
+    }
+
+    public SingleLinkedList<T> reversal(){
+        SingleLinkedList<T> s = new SingleLinkedList<>();
+        Node<T> p = this.head;
+        Node<T> q = null;
+
+        while (p != null){
+            q = p.next;
+            p.next = null;
+            s.insertHead(p);
+            p = q;
+        }
+        return s;
     }
 }

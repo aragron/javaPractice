@@ -9,7 +9,7 @@ import javax.print.attribute.standard.NumberUp;
 public class testSingleLinkedList {
     public static void main(String[] args) {
         SingleLinkedList<String> sl = new SingleLinkedList<>();
-        SingleLinkedList<String> sl2 = new SingleLinkedList<>();
+        //SingleLinkedList<String> sl2 = new SingleLinkedList<>();
 
         SingleLinkedList.Node<String> a = sl.createNode("a");
         SingleLinkedList.Node<String> b = sl.createNode("b");
@@ -63,11 +63,14 @@ public class testSingleLinkedList {
         System.out.println("-----------------");
         System.out.println(sl.getTail().getData());
 
-        sl2.append("m");
-        sl2.append("n");
-        sl2.append("l");
-
-        sl.splice(sl2);
-        sl.printAll();
+//        sl2.append("m");
+//        sl2.append("n");
+//        sl2.append("l");
+//
+//        sl.splice(sl2);
+//        sl.printAll();
+        System.out.println("-----------------");
+        SingleLinkedList<String> s = sl.reversal();
+        s.printAll();
     }
 }
