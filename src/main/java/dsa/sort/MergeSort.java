@@ -7,13 +7,6 @@ import java.util.Arrays;
  * @Date: 2018/11/6 15:31
  */
 public class MergeSort {
-//    private int n ;
-//    private int [] arr;
-//
-//    public MergeSort(){
-//        this.arr = arr;
-//        this.n = arr.length;
-//    }
 
     public static void main(String[] args){
         int[] arr = {9,8,7,5,6,4,11,34,99,22,10,101,3,2,1,98};
